@@ -806,7 +806,7 @@ class Ali {
             headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8' },
             data: Object.keys(formData)
                          .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key]))
-                         .join('&');,
+                         .join('&'),
           });       
         
         if (openResp.code == 200) {
