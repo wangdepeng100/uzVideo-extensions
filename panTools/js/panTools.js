@@ -793,13 +793,10 @@ class Ali {
        try{
 	     const openResp = await req('https://open.aliyundrive.com/oauth/access_token', {
             method: 'post',
-            headers: this.baseHeaders,
-            data: {
-              refresh_token: this.token280,
-              grant_type: 'refresh_token',
-              client_secret:'ae51ae9aba2e431ea22be1867e54d717',
-              client_id:'520375393e934297a1385778258b723b',
-            },
+            headers: {
+    'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
+    },
+            data: `refresh_token=${this.token280}&client_secret=ae51ae9aba2e431ea22be1867e54d717&grant_type=refresh_token&client_id=520375393e934297a1385778258b723b`,
           });
 					  
         if (openResp.code == 200) {
