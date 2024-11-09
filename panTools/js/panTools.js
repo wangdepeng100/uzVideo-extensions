@@ -793,20 +793,22 @@ class Ali {
     if (!this.oauth.access_token || !this.verifyTimestamp(this.oauth.expire_time)) {
        try{
             				        UZUtils.debugLog('openAuth表单');
-          const formData = {
+          const data = {
                     refresh_token: this.token32,
                     grant_type: 'refresh_token',
                     client_id: '520375393e934297a1385778258b723b',
                     grant_type: 'ae51ae9aba2e431ea22be1867e54d717',
                   };
+           const formData = Object.keys(formData)
+                                  .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key]))
+                                  .join('&');
+           				        UZUtils.debugLog(formData);
 
         //const formData =  `refresh_token=${this.token280}&client_secret=ae51ae9aba2e431ea22be1867e54d717&grant_type=refresh_token&client_id=520375393e934297a1385778258b723b`;
 	      const openResp = await req('https://open.aliyundrive.com/oauth/access_token', {
             method: 'post',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8' },
-            data: Object.keys(formData)
-                         .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(formData[key]))
-                         .join('&')
+            data: formData,
           });       
         
         if (openResp.code == 200) {
@@ -818,7 +820,6 @@ class Ali {
           }
       } catch (e) {}
 				        UZUtils.debugLog('错误哦');
-                UZUtils.debugLog(e);
     }
   }
   
