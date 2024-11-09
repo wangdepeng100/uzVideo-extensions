@@ -791,7 +791,6 @@ class Ali {
   async openAuth() {
     				        UZUtils.debugLog('openAuth开始执行');
     if (!this.oauth.access_token || !this.verifyTimestamp(this.oauth.expire_time)) {
-          				  UZUtils.debugLog('openAuth真正执行');
        try{
         const formData =  `refresh_token=${this.token280}&client_secret=ae51ae9aba2e431ea22be1867e54d717&grant_type=refresh_token&client_id=520375393e934297a1385778258b723b`;
         UZUtils.debugLog('$$$$$$$$$$$$');
@@ -799,11 +798,8 @@ class Ali {
 	      const openResp = await req('https://open.aliyundrive.com/oauth/access_token', {
             method: 'post',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8' },
-            data: formData,
-          });
-          
-
-        UZUtils.debugLog(openResp);
+            //data: formData,
+          });       
         
         if (openResp.code == 200) {
             this.oauth = openResp.data;
