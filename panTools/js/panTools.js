@@ -799,7 +799,7 @@ class Ali {
 	      const openResp = await req('https://open.aliyundrive.com/oauth/access_token', {
             method: 'post',
             headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8' },
-            data: JSON.parse(formData),
+            data: formData,
           });
           
 
