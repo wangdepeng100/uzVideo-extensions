@@ -664,7 +664,7 @@ class Ali {
     this.shareTokenCache = {};
     this.saveFileIdCaches = {};
     this.saveDirId = null;
-	this.userDriveId = null,
+	  this.userDriveId = null,
     this.saveDirName = 'uz影视';
     this.user = {};
     this.oauth = {};
@@ -673,8 +673,8 @@ class Ali {
     this.token280 = '';
     this.apiUrl = 'https://api.aliyundrive.com/';
     this.openApiUrl = 'https://open.aliyundrive.com/adrive/v1.0/';
-	this.updateToken32 = () => {};
-	this.updateToken280 = () => {};
+  	this.updateToken32 = () => {};
+	  this.updateToken280 = () => {};
     this.baseHeaders = {
     'User-Agent':
       'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) uc-cloud-drive/2.5.20 Chrome/100.0.4896.160 Electron/18.3.5.4-b478491100 Safari/537.36 Channel/pckk_other_ch',
@@ -789,7 +789,9 @@ class Ali {
   
   
   async openAuth() {
+    				        UZUtils.debugLog('openAuth开始执行');
     if (!this.oauth.access_token || !this.verifyTimestamp(this.oauth.expire_time)) {
+          				  UZUtils.debugLog('openAuth真正执行');
        try{
         const formData =  `refresh_token=${this.token280}&client_secret=ae51ae9aba2e431ea22be1867e54d717&grant_type=refresh_token&client_id=520375393e934297a1385778258b723b`;
         UZUtils.debugLog('$$$$$$$$$$$$');
