@@ -798,9 +798,10 @@ class Ali {
             data: JSON.parse(formData),
           });
           
-
-                
-					  
+        UZUtils.debugLog('$$$$$$$$$$$$');
+			  UZUtils.debugLog(formData);
+        UZUtils.debugLog(openResp);
+        
         if (openResp.code == 200) {
             this.oauth = openResp.data;
             this.oauth.expire_time = new Date().toISOString();
