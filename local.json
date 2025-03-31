@@ -1,13 +1,5 @@
 [
   {
-    "name": "云盘资源网",
-    "version": 1,
-    "webSite": "https://res.yunpan.win",
-    "instance": "resYunPan20241120",
-    "api": "vod/js/resyunpan.js",
-    "type": 100
-  },
-  {
     "name": "烧火",
     "version": 2,
     "webSite": "https://saohuo.tv",
@@ -64,22 +56,6 @@
     "webSite": "https://www.zxzja.com",
     "instance": "zxzj20240620",
     "api": "vod/js/zxzj.js",
-    "type": 100
-  },
-  {
-    "name": "囧次元",
-    "version": 1,
-    "webSite": "http://yhhy.zshtys888.com",
-    "codeID": "KwdXRAgsew9EnmShYGEAl3nnHnhyDjgp",
-    "api": "vod/js/jocy.js",
-    "type": 101
-  },
-  {
-    "name": "金牌影视",
-    "version": 2,
-    "webSite": "https://www.ghw9zwp5.com",
-    "instance": "jpyy20240716",
-    "api": "vod/js/jpyy.js",
     "type": 100
   },
   {
@@ -141,21 +117,11 @@
     "type": 101
   },
   {
-    "name": "瓜子 app",
-    "version": 2,
-    "remark": "v1.6.53 及以上版本",
-    "webSite": "https://api.9cec79d.com",
-    "codeID": "ra5Z3wtXKshzSMK2",
-    "instance": "gzapp20241001",
-    "api": "vod/js/gzapp.txt",
-    "type": 100
-  },
-  {
-    "name": "瓜子web",
-    "version": 2,
-    "webSite": "https://api.zaqohu.com",
-    "instance": "gzys20240822",
-    "api": "vod/js/gzys.js",
+    "name": "云盘资源网",
+    "version": 1,
+    "webSite": "https://res.yunpan.win",
+    "instance": "resYunPan20241120",
+    "api": "vod/js/resyunpan.js",
     "type": 100
   },
   {
@@ -172,6 +138,22 @@
     "webSite": "http://103.45.162.207:20720",
     "api": "vod/js/huban.js",
     "type": 101
+  },
+  {
+    "name": "囧次元",
+    "version": 1,
+    "webSite": "http://yhhy.zshtys888.com",
+    "codeID": "KwdXRAgsew9EnmShYGEAl3nnHnhyDjgp",
+    "api": "vod/js/jocy.js",
+    "type": 101
+  },
+  {
+    "name": "金牌影视",
+    "version": 2,
+    "webSite": "https://www.ghw9zwp5.com",
+    "instance": "jpyy20240716",
+    "api": "vod/js/jpyy.js",
+    "type": 100
   },
   {
     "name": "两个bt",
@@ -231,6 +213,24 @@
     "type": 101
   },
   {
+    "name": "瓜子 app",
+    "version": 2,
+    "remark": "v1.6.53 及以上版本",
+    "webSite": "https://api.9cec79d.com",
+    "codeID": "ra5Z3wtXKshzSMK2",
+    "instance": "gzapp20241001",
+    "api": "vod/js/gzapp.txt",
+    "type": 100
+  },
+  {
+    "name": "瓜子web",
+    "version": 2,
+    "webSite": "https://api.zaqohu.com",
+    "instance": "gzys20240822",
+    "api": "vod/js/gzys.js",
+    "type": 100
+  },
+  {
     "name": "4k-av",
     "version": 2,
     "webSite": "https://4k-av.com",
@@ -261,19 +261,19 @@
     "type": 0
   },
   {
-    "name": "UC、夸克、阿里 网盘解析工具",
-    "version": 14,
-    "remark": "iOS14 以上版本可用",
-    "env": "UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称",
-    "api": "panTools/js/panTools.js",
-    "type": 300
-  },
-  {
     "name": "夸克|123|189|UC 网盘解析工具",
     "version": 17,
     "remark": "iOS14 以上版本可用,App v1.6.54 及以上版本可用",
     "env": "UCCookie##用于播放UC网盘视频&&UC_UT##自动获取，不可用时点击删除再重启app&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称&&123网盘账号##用于播放123网盘视频&&123网盘密码##用于播放123网盘视频&&天翼网盘账号##用于播放天翼网盘视频&&天翼网盘密码##用于播放天翼网盘视频",
     "api": "panTools/js/panTools2.js",
+    "type": 300
+  },
+  {
+    "name": "UC、夸克、阿里 网盘解析工具",
+    "version": 14,
+    "remark": "iOS14 以上版本可用",
+    "env": "UCCookie##用于播放UC网盘视频&&夸克Cookie##用于播放Quark网盘视频&&阿里Token##用于播放阿里网盘视频&&转存文件夹名称##在各网盘转存文件时使用的文件夹名称",
+    "api": "panTools/js/panTools.js",
     "type": 300
   },
   {
